@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# # Règles pour la réécritures de URLs : 
+
+# # Ne pas ré-écrire les URLs pour certains répertoires
+RewriteCond %{REQUEST_URI} !^/ressources/
+
+# # Ne pas modifier les URLs de fichiers et répertoires existants
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# # Ré-écrire les URLs des "routes" vers index.php?route=URL
+RewriteRule ^(.*)$ index.php?route=$1 [QSA]
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>

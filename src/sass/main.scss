@@ -1,0 +1,34 @@
+/*
+    Base: animations, base, typography, and utilies.
+    Components: have a single scss file for each individual component
+    Layout: Header, footer, grid, navigation
+    Pages: Have a single scss for each specific page
+    Abstracts: handles function, mixins, and variables
+    Vendor: handles 3rd party css
+*/
+
+// abstract
+@import "abstracts/variables";
+
+// vendor
+@import "vendors/bootstrap/bootstrap";
+@import "vendors/fontawesome/fontawesome";
+@import "vendors/fontawesome/brands";
+@import "vendors/fontawesome/regular";
+@import "vendors/fontawesome/solid";
+@import "vendors/fontawesome/v4-shims";
+
+// base
+@import "base/global";
+@import "base/bootstrap-reset";
+@import "base/spacing";
+
+// components
+// @import 'components/breadcrumb';
+// @import 'components/hero-banner';
+
+// layout
+// @import 'layouts/header';
+// @import 'layouts/footer';
+
+// pages
