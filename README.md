@@ -1,3 +1,3 @@
 # portfolio
 
-# RUN NPM INSTALL
+# Run npm install
