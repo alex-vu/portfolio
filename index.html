@@ -3,20 +3,135 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Starter Kit</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Alex Vu</title>
+
+    <!-- CSS
+    ================================================== -->
     <link media="all" rel="stylesheet" href="assets/css/main.min.css" />
+
+    <!-- favicons
+	  ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
-    <div id="wrapper">
-      <div class="entry-section red">
-        <div id="home-canvas"></div>
-      </div>
-      <section class="starter-box">
-        <h1>JustCoded</h1>
-        <p>Web Starter Kit</p>
-      </section>
+    <div id="preloader">
+      <div id="loader"></div>
     </div>
+
+    <main>
+      <div class="page-menu"></div>
+      <header class="page-header">
+        <div class="logo">Million</div>
+        <div class="hamburger mobile-menu"></div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Showcase</a></li>
+            <li><a href="#">Events & Production</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <ul class="page-social vertical-bar">
+        <li><a href="#">FB</a></li>
+        <li><a href="#">TW</a></li>
+        <li><a href="#">YT</a></li>
+        <li><a href="#">BE</a></li>
+      </ul>
+      <div class="page-wrap">
+        <!-- slider -->
+        <section class="content">
+          <section class="slider">
+            <div
+              class="animation-hero"
+              style="background: url(http://anchor.themeshop.co/wp-content/uploads/2018/11/hero1.gif) center  no-repeat;"
+            ></div>
+            <div class="slider-inner">
+              <h5>User Interface</h5>
+              <h2>Creative ideas with more experience</h2>
+              <p>
+                Lorem ipsum dolor sit amet, <u>consectetur adipiscing</u> elit.
+                Aliquam dictum mattis velit, sit amet faucibus felis iaculis
+                nec.
+              </p>
+              <a href="#">Discover now</a>
+            </div>
+          </section>
+          <!-- 
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"></div>
+            </div>
+          </div>
+          <div class="spacing"></div> -->
+        </section>
+        <!-- End slider -->
+
+        <!-- sample -->
+        <section class="content">
+          <section class="samples">
+            <div class="l-column">
+              <ul>
+                <li class="sample-item">
+                  <a class="sample-link" href="project.html">
+                    <img
+                      src="http://anchor.themeshop.co/wp-content/uploads/2018/11/works01.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <h4>Infinity & Beyond</h4>
+                </li>
+                <li class="sample-item">
+                  <a class="sample-link" href="#">
+                    <img
+                      src="https://www.cssdsgn.com/wp-content/uploads/2019/02/zero-is-two.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <h3>Case Study</h3>
+                  <h4>Zero is Two</h4>
+                </li>
+                <li class="sample-item">
+                  <a class="sample-link" href="#">
+                    <img
+                      src="https://www.cssdsgn.com/wp-content/uploads/2019/02/active-spaces.jpg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="r-column">
+              <ul>
+                <li class="sample-item">
+                  <a class="sample-link" href="#">
+                    <img
+                      src="https://www.cssdsgn.com/wp-content/uploads/2019/02/gemeindehaus.jpg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+                <li class="sample-item">
+                  <a class="sample-link" href="#">
+                    <img
+                      src="https://www.cssdsgn.com/wp-content/uploads/2018/12/disconnect.jpg"
+                      alt=""
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <!-- End sample -->
+      </div>
+    </main>
+
     <script src="assets/js/main.min.js" defer></script>
   </body>
 </html>

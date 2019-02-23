@@ -11,7 +11,6 @@
 @import "abstracts/variables";
 
 // vendor
-@import "vendors/bootstrap/bootstrap";
 @import "vendors/fontawesome/fontawesome";
 @import "vendors/fontawesome/brands";
 @import "vendors/fontawesome/regular";
@@ -20,7 +19,6 @@
 
 // base
 @import "base/global";
-@import "base/bootstrap-reset";
 @import "base/spacing";
 
 // components
@@ -29,6 +27,7 @@
 
 // layout
 // @import 'layouts/header';
+@import "layouts/homepage";
 // @import 'layouts/footer';
 
 // pages

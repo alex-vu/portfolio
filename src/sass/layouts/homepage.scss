@@ -1,0 +1,352 @@
+body {
+  background: $dark-bg;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-header {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 5;
+  padding: 30px 100px;
+  // opacity: 0;
+
+  .logo {
+    float: left;
+    margin-right: 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+
+  .main-nav {
+    float: right;
+    margin-top: 4px;
+    margin-left: 30px;
+
+    li {
+      float: left;
+      height: 29px;
+      line-height: 29px;
+      margin-left: 30px;
+      position: relative;
+
+      a {
+        float: left;
+        color: #fff;
+        font-weight: 600;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.page-social {
+  width: 400px;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  margin-top: 200px;
+  z-index: 3;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px 0;
+    margin: 0 10px;
+    font-weight: 600;
+
+    a {
+      float: left;
+      color: #fff;
+      font-size: 11px;
+    }
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transform: all 0.8s ease;
+  transition: all 0.8s ease;
+
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
+}
+
+.swiper-slide {
+  background-image: url("http://anchor.themeshop.co/wp-content/uploads/2018/11/hero3.jpg");
+  width: 1903px;
+  background-position: 0% -75px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(19, 19, 20, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(19, 19, 20, 1) 100%
+    );
+    background-image: -moz-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(19, 19, 20, 1) 100%
+    );
+    background-image: -webkit-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(19, 19, 20, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(19, 19, 20, 1) 100%
+    );
+  }
+}
+
+.spacing {
+  width: 100%;
+  height: 100vh;
+  float: left;
+  position: relative;
+  /* background: #131314; */
+  z-index: 1;
+}
+
+// .l-column {
+//   padding-top: 100px;
+// }
+
+// .l-column,
+// .r-column {
+//   width: 50%;
+//   float: left;
+// }
+
+.sample-item {
+  width: 50%;
+  margin-bottom: 200px;
+  float: left;
+  padding: 4%;
+
+  h3 {
+    margin-top: 25px;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 0.85px;
+    opacity: 0.6;
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+
+  h4 {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.85px;
+    margin-top: 1rem;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .sample-link {
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -webkit-filter: brightness(70%);
+    filter: brightness(70%);
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+      -webkit-filter: brightness(100%);
+      filter: brightness(100%);
+    }
+  }
+}
+
+.content {
+  width: calc(100% - 120px);
+  /* float: left; */
+  background: #fff;
+  margin: 0 60px;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  float: left;
+  position: relative;
+  background: $dark-bg;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(19, 19, 20, 1) 100%
+    );
+    background-image: -o-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(19, 19, 20, 1) 100%
+    );
+    background-image: -moz-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(19, 19, 20, 1) 100%
+    );
+    background-image: -webkit-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(19, 19, 20, 1) 100%
+    );
+    background-image: -ms-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(19, 19, 20, 1) 100%
+    );
+  }
+
+  .animation-hero {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 600px 450px;
+  }
+
+  .slider-inner {
+    width: 100%;
+    display: inline-block;
+    padding: 0 100px;
+    position: relative;
+    z-index: 4;
+    color: white;
+
+    h5 {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    h2 {
+      max-width: 52%;
+      font-family: "Playfair Display";
+      font-size: 6em;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    p {
+      max-width: 40%;
+      line-height: 25px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      float: left;
+      font-size: 12px;
+      font-weight: 600;
+      color: #fff;
+      position: relative;
+    }
+  }
+}
+
+// .project-gallery {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   margin: auto;
+//   bottom: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: url(https://www.signatureelement.com/site/assets/media/models-01.1540995860.jpg)
+//     no-repeat;
+//   background-position: center 18%;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+//   -webkit-transition: all 0.5s ease-out;
+//   transition: all 0.5s ease-out;
+//   -webkit-filter: brightness(70%);
+//   filter: brightness(70%);
+//   cursor: pointer;
+
+//   &:hover {
+//     transform: scale(1.1);
+//     -webkit-filter: brightness(100%);
+//     filter: brightness(100%);
+//   }
+// }
